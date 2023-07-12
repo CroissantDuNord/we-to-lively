@@ -16,14 +16,15 @@
   
 # Tutorial
 [Video Tutorial](https://www.youtube.com/watch?v=ynaYieqKuR4)
-1. Open the [Wallpaper Engine Workshop](https://steamcommunity.com/app/431960/workshop/) Page
+1. Open the [Wallpaper Engine Workshop](https://steamcommunity.com/app/431960/workshop/) Page and chose a wallpaper
 > **Warning**
-> The software is only compatible with video wallaper
-3. Copy & Paste *(Ctrl+V)* the link for the workshop page into the software
+> .mp4 wallpapers are recommended; there is support for other formats, but it's not perfect (.pkg).
+3. Copy & Paste the link for the workshop page into the software
 4. Click the download button and click on *"Download from steam client"*
-5. Click the convert button on select your ******.zip file, And its done!, you can open this file with lively or in any media player 🎉
+5. Click the convert button on select your ******.zip file, And its done!, > **Tip**
+> If your file was a .pkg search in the file explorer for "\*.mp4" or "\*.png to find a compatible file.
 
-# Help
+# Help / FAQ
 - "Your file is invalid, Make sure its a video background in the .mp4 format". But my wallpaper is a video!
 
     Make sure its a video, sometimes background look like video but they are shaders, web-pages...
