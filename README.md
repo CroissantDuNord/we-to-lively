@@ -5,10 +5,7 @@
 <h4 align="center">Convert Wallpaper from Wallpaper Engine to Lively Wallpaper or to an .mp4 file</h4>
 </p>
 
-> **Warning**
-> Im working on OpenTCG (Physicial port of "Genius Invokation" from "Genshin Impact©"), Im not active on WEL, but as of now its working fine!
- 
- ---
+---
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/CroissantDuNord/we-to-lively/main/media/window.png?token=GHSAT0AAAAAAB6YTS6IVS36OLI4LFLLOA7CZAVAK7A" alt="Logo">
