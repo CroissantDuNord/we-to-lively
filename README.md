@@ -8,24 +8,20 @@
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/CroissantDuNord/we-to-lively/main/media/window.png?token=GHSAT0AAAAAAB6YTS6IVS36OLI4LFLLOA7CZAVAK7A" alt="Logo">
+  <img src="https://github.com/CroissantDuNord/we-to-lively/assets/79372025/50d171b1-ba58-489d-a5d3-bb88f586e2d9" alt="Demo">
   
 ---
 
-# New UI (Soon) 👌
-![image](https://github.com/CroissantDuNord/we-to-lively/assets/79372025/42f4c083-95b8-4724-872e-77d577dbd409)
-
-
-  
 # Tutorial
-[Video Tutorial](https://www.youtube.com/watch?v=ynaYieqKuR4)
+[Video Tutorial](https://www.youtube.com/watch?v=ynaYieqKuR4) (**Note:** This is on the old UI *0.1*)
 1. Open the [Wallpaper Engine Workshop](https://steamcommunity.com/app/431960/workshop/) Page and chose a wallpaper
 > **Warning**
 > .mp4 wallpapers are recommended; there is support for other formats, but it's not perfect (.pkg).
+> EDIT: Currently other format are disabled, please only use .mp4
 3. Copy & Paste the link for the workshop page into the software
 4. Click the download button and click on *"Download from steam client"*
 5. Click the convert button on select your ******.zip file, And its done!, > **Tip**
-> If your file was a .pkg search in the file explorer for "\*.mp4" or "\*.png to find a compatible file.
+> ~If your file was a .pkg search in the file explorer for "\*.mp4" or "\*.png to find a compatible file.~
 
 # Help / FAQ
 - "Your file is invalid, Make sure its a video background in the .mp4 format". But my wallpaper is a video!
