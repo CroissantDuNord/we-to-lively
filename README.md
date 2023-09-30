@@ -12,6 +12,9 @@
   
 ---
 
+# New UI (Soon) 👌
+![image](https://github.com/CroissantDuNord/we-to-lively/assets/79372025/42f4c083-95b8-4724-872e-77d577dbd409)
+
 
   
 # Tutorial
