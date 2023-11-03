@@ -13,13 +13,15 @@ import shutil
 import subprocess
 import os
 
+print("loading please wait...")
+
 
 class ConvertWindow(QWidget):
     def __init__(self):
         # This will create the full UI in the ConvertWindow Widget
         super().__init__()
         self.resize(500, 250)
-        self.setWindowTitle("Wallpaper Engine To Lively 1.3")
+        self.setWindowTitle("Wallpaper Engine To Lively 1.4")
         # Dark Theme
         self.setStyleSheet("ConvertWindow {background: rgb(32, 32, 32)}")
         # Layout
@@ -27,24 +29,28 @@ class ConvertWindow(QWidget):
         self.app_title = SubtitleLabel("Wallpaper Engine Convertor", self)
         self.label_url = CaptionLabel("Workshop URL", self)
         self.input_url = LineEdit(self)
-        self.download_button = PushButton("Download", self)
-        self.convert_button = PushButton("Convert", self)
-        self.check_button = PushButton("Check", self)
+        self.workshop_button = PushButton("Open Workshop", self)
+        self.download_button = PushButton("Download From Workshop", self)
+        self.convert_button = PushButton("Convert Wallpaper", self)
+        self.check_button = PushButton("Check Wallpaper Format", self)
         self.download_button.clicked.connect(self.download_file)
+        self.workshop_button.clicked.connect(self.open_workshop)
         self.convert_button.clicked.connect(self.convert)
         self.check_button.clicked.connect(self.check)
-
-        layout_hz = QVBoxLayout()
-
-        layout_hz.addWidget(self.app_title)
         self.app_title.setContentsMargins(0, 0, 0, 15)
+
+        # Layout of the app
+        layout_hz = QVBoxLayout()
+        layout_hz.addWidget(self.app_title)
         layout_hz.addWidget(self.label_url)
         layout_hz.addWidget(self.input_url)
         layout_hz.addWidget(CaptionLabel("Options", self))
+        layout_hz.addWidget(self.workshop_button)
         layout_hz.addWidget(self.download_button)
-        layout_hz.addWidget(self.convert_button)
         layout_hz.addWidget(self.check_button)
+        layout_hz.addWidget(self.convert_button)
         self.setLayout(layout_hz)
+
 
     def download_file(self):
         # Open a webpage for the user to download the background
@@ -131,6 +137,27 @@ class ConvertWindow(QWidget):
         # CMD (str): The command to run EXAMPLE: 'explorer /select {PATH}'
         subprocess.Popen(cmd)
 
+
+    def open_workshop(self):
+        warning_workshop = FlyoutView(
+            icon=InfoBarIcon.WARNING,
+            title='Warning',
+            content="Use popular wallpapers before 2022.\nOr will you get a \"Free Space Left\" error (meaning: the file is not found)",
+            parent=self,
+            isClosable=True
+        )
+
+        open_workshop_url = PushButton("Open Workshop")
+        open_workshop_url.clicked.connect(self.open_workshop_url)
+        warning_workshop.addWidget(open_workshop_url, align=Qt.AlignLeft)
+
+
+        w = Flyout.make(warning_workshop, self.workshop_button, self)
+        warning_workshop.closed.connect(w.close)
+
+
+    def open_workshop_url(self):
+        webbrowser.open("https://steamcommunity.com/workshop/browse/?appid=431960&searchtext=&childpublishedfileid=0&browsesort=trend&section=readytouseitems&requiredtags%5B%5D=Video&requiredtags%5B%5D=Everyone&created_date_range_filter_start=0&created_date_range_filter_end=0&updated_date_range_filter_start=0&updated_date_range_filter_end=0")
 
 if __name__ == '__main__':
     # enable dpi scale
